@@ -1,0 +1,27 @@
+{
+  "name": "dynamo-cloner-cli",
+  "bin": {
+    "dynamo-cloner": "./dist/index.js"
+  },
+  "version": "0.0.1",
+  "description": "Copy an item from one dynamo table to another in another region",
+  "main": "index.js",
+  "scripts": {
+    "link-cli": "pnpm unlink --global dynamo-cloner-cli && pnpm link --global",
+    "dev": "tsc -w",
+    "build": "tsc --build"
+  },
+  "keywords": [],
+  "author": "Ramon Rouco",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.490.0",
+    "@aws-sdk/lib-dynamodb": "^3.490.0",
+    "commander": "^11.1.0",
+    "dotenv": "^16.3.1"
+  }
+}
